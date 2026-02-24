@@ -1,0 +1,3 @@
+3DFATMIC simulates subsurface flow, transport, and fate contaminants which are undergoing chemical and/or biological transformations. The model is applicable to transient conditions in both saturated and unsaturated zones.
+
+3DFATMIC is applicable to transient conditions in both saturated and unsaturated zones. The flow module is a Galerkin finite element solution of Richard's equation. The transport module is a hybrid Lagrangian-Eulerian approach, with an adapted zooming and peak capturing algorithm. This model can almost eliminate spurious oscillation, numerical dispersion, and peak clipping due to advective transport.
