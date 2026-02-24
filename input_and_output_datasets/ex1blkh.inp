@@ -1,0 +1,90 @@
+    1 One-Dimensional Column Flow Problem; L=CM, T=DAY, M=G
+========= data set 2: option parameters
+  10  0  1  0
+ 100  0.5d0  1.0d-4
+ 1  1  0  0  0  0  0  0 0 1
+ 1  1.0  0.5d0  0.5d0  0.0d0
+ 2  0  1  1  1
+ 1.0d0 0.5d0 1.0d0 1.0d0
+========= data set 3: iteration parameters
+ 50 20 100 2.0d-2 2.0d-2
+  1 100 1.0d-3  1.0d-4
+========= data set 4: time control parameters
+ 44   2
+ 0.05d0    0.20d0    1.0d0    22.0d0
+333030300030003003000033303030003000300300003
+000000000000000000000000000000000000000000000
+    1.0D01 0.05   2.0000D1  0.05
+========= DATA SET 5:  MATERIAL PROPERTIES
+  1 7 0 1
+  0.0D0   0.0D0  10.0D0   0.0D0   0.0D0   0.0D0  1.0d0 
+  0.0d0
+  1.0d0
+========= DATA SET 6:  soil properties
+    0    4    0    1.0d0    1.0d0   1.0d0
+   0.150D0   0.450D0    0.00D0    -1.0D2   THPROP
+   0.000D0   0.000D0    0.00D0     0.0D0   AKPROP
+C ******* DATA SET 7:  NODE COORDINATES
+  164
+    1   40    1    0.0D0    50.0D0     0.0D0     0.0D0     0.0D0     5.0D0
+   42   40    1    0.0D0     0.0D0     0.0D0     0.0D0     0.0D0     5.0D0
+   83   40    1    50.0D0     0.0D0     0.0D0     0.0D0     0.0D0     5.0D0
+  124   40    1    50.0D0    50.0D0     0.0D0     0.0D0     0.0D0     5.0D0
+    0    0    0    0.0     0.0       0.0       0.0       0.0       0.0
+C ******* DATA SET 8:  SUBREGIONAL DATA
+    4
+    1    3    1   41    0
+    0    0    0    0    0        END OF NNPLR(K)
+    1   40    1    1    1
+    0    0    0    0    0        END OF GNLR(I,1)
+    1   40    1   42    1
+    0    0    0    0    0        END OF GNLR(I,2)
+    1   40    1   83    1
+    0    0    0    0    0        END OF GNLR(I,3)
+    1   40    1  124    1
+    0    0    0    0    0        END OF GNLR(I,4)
+C ******* DATA SET 9:  ELEMENT INCIDENCES
+   40
+    1   39    1   42   83  124    1   43   84  125    2    1
+    0    0    0    0    0    0    0    0    0   0    0   0   END OF IE
+C ******* data set10: material correction
+    0
+C ******* DATA SET 11:  INITIAL CONDITIONS
+    0
+    1    3   41          0.0D0     0.0D0     0.0D0
+    2   38    1        -9.70D1     0.0D0     0.0D0
+   43   38    1        -9.70D1     0.0D0     0.0D0
+   84   38    1        -9.70D1     0.0D0     0.0D0
+  125   38    1        -9.70D1     0.0D0     0.0D0
+   41    3   41        -9.00D1     0.0D0     0.0D0
+    0    0    0         0.0        0.0       0.0        END OF IC, flow
+========= data set 12: element(distributed) source/sink, flow
+    0 0 0 0
+========= data set 13: point(well) source/sink, flow
+    0 0 0 0
+========= data set 16: rainfall/evaporation-seepage boundary conditions
+    1  4  1  4  0
+     0.0D0  5.0D0    10.0D0 5.0D0  10.001D0  -5.0D0    1.0D38 -5.0D0
+    1    0    0    1    0
+    0    0    0    0    0         END OF IRTYP
+    1    0    0   82  123  164   41    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0 END OF ISV(J,I) J=1,4
+    1    3    1   41   41
+    0    0    0    0    0                        END OF NPVB
+    1    3    1          0.0D0     0.0D0       0.0
+    0    0    0          0.0       0.0         0.0   END OF HCON
+    1    3    1        -90.0D0     0.0D0       0.0
+    0    0    0          0.0       0.0         0.0   END OF HMIN
+C ******* DATA SET 17:  DIRICHLET BOUNDARY CONDITIONS, flow
+    4  1  2  0
+     0.0D0     0.0D0    1.0D38     0.0D0
+    1   3  1   1  41
+    0   0  0   0  0
+    1    3    1    1    0
+    0    0    0    0    0                      END OF IDTYP
+========= data set 18: cauchy boundary conditions, flow
+    0 0 0 0 0
+========= data set 19: neumann boundary conditions, flow
+    0 0 0 0 0
+    0                  END OF JOB 
+-----------------------------------------0000

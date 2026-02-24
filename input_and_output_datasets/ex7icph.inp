@@ -1,0 +1,312 @@
+    7 2-D Coupled Flow and Multicomponent Transport, L= M, M=KG, T=DAY 
+===== DATA SET 2: OPTION PARAMETERS
+ 11  0  1  0                                  IMOD,IGEOM,IBUG,ICHNG
+ 1 0.5D0 1.0D-4                               NITRFs,OMEFTs,ALLOW
+ 0 1 1 0 3 3 0 0 0 1 KSSf,KSSt,ILUMP,IMID,IPNTSf,IPNTSt,NSTRf,NSTRt,MICONF,IQUAR
+ 1  1.0  1.0d0  0.5d0  0.0d0                  KGRAV,Wf,OMEf,OMIf
+ 2  1  0  1  1                                KVIt,IWET,IOPTIM,KSORP,LGRAN 
+ 1.0d0 1.0d0 1.0d0 1.0d0                      Wt,WVt,OMEt,OMIt  WT WVT OMET OMIT
+  1   1.0d0                                   IEIGEN,GG 
+===== DATA SET 3: ITERATION PARAMETERS
+ 50 20 999 1.0d-2 1.0d-2                      NITERf,NCYLf,NPITER,TOLAf,TOLBf
+ 50 200 1.0d-3  1.0d-4                        NITERt,NPITERt,TOLAt,TOLBt
+===== DATA SET 4: TIME CONTROL PARAMETERS
+ 80   0                                       NTI,NDTCHG
+ 5.0d-2  0.00d0  5.0d-2  4.0d0                DELT,CHNG,DELMAX,TMAX
+55        5         5         5         5         5         5         5
+5
+1         1         1         1         1         1         1         1        
+1
+===== DATA SET 5: MATERIAL PROPERTIES
+  8  7  7  1                                  NMAT,NMPPM,NCC,IRXN
+ 1.0d-2  0.0d0 1.0d-2 0.0D0 0.0D0 0.0D0 1.0D3         PROPf
+ 1.0d0   0.0d0 1.0d0  0.0D0 0.0D0 0.0D0 1.0D3         PROPf
+ 1.0d-1  0.0d0 1.0d-1 0.0D0 0.0D0 0.0D0 1.0D3         PROPf
+ 3.16d-1 0.0d0 3.16d-1 0.0D0 0.0D0 0.0D0 1.0D3        PROPf
+ 5.62d-2 0.0d0 5.62d-2 0.0D0 0.0D0 0.0D0 1.0D3        PROPf
+ 3.16d-2 0.0d0 3.16d-2 0.0D0 0.0D0 0.0D0 1.0D3        PROPf
+ 1.0d-1  0.0d0 1.00d-1 0.0D0 0.0D0 0.0D0 1.0D3        PROPf
+ 3.16d-1 0.0d0 3.16d-1 0.0D0 0.0D0 0.0D0 1.0D3        PROPf
+ 1.0d3  1.0d3  1.0d3  1.0d3  1.0d3  1.0d3  1.0d3      DINTS
+ 0.0    0.0d0  0.0d0  0.0d0  0.0d0  0.0d0  0.0d0      RHOMU
+ 1.414d3 0.0d0   0.0d0   0.0  1.0d0   0.0d0   1.0d0              PROPt
+ 0.0d0  0.0d0  0.0d0  0.0d0  0.0d0  0.0d0  0.0d0      RKD
+ 1.0d-2 1.0d-2 1.0d-2 1.0d-2 1.0d-2 1.0d-2 1.0d-2     TRANC
+ 1.9019d3 0.0d0    0.0d0   0.0     1.0d0   0.0d0   1.0d0              PROPT
+ 0.0d0  0.0d0  0.0d0  0.0d0  0.0d0  0.0d0  0.0d0      RKD
+ 0.0d0  0.0d0  0.0d0  0.0d0  0.0d0  0.0d0  0.0d0      TRANC
+ 1.6895d3  0.0d0    0.0d0   0.0     1.0d0   0.0d0   1.0d0              PROPT
+ 0.0d0  0.0d0  0.0d0  0.0d0  0.0d0  0.0d0  0.0d0      RKD
+ 1.0d-4 1.0d-4 1.0d-4 1.0d-4 1.0d-4 1.0d-4 1.0d-4     TRANC
+ 1.7558d3 0.0d0    0.0d0   0.0     1.0d0   0.0d0   1.0d0              PROPT
+ 0.0d0  0.0d0  0.0d0  0.0d0  0.0d0  0.0d0  0.0d0      RKD
+ 0.0d0  0.0d0  0.0d0  0.0d0  0.0d0  0.0d0  0.0d0      TRANC
+ 1.4728d3 0.0d0    0.0d0   0.0     1.0d0   0.0d0   1.0d0              PROPT
+ 0.0d0  0.0d0  0.0d0  0.0d0  0.0d0  0.0d0  0.0d0      RKD
+ 0.0d0  0.0d0  0.0d0  0.0d0  0.0d0  0.0d0  0.0d0      TRANC
+ 1.5158d3  0.0d0    0.0d0   0.0     1.0d0   0.0d0   1.0d0              PROPT
+ 0.0d0  0.0d0  0.0d0  0.0d0  0.0d0  0.0d0  0.0d0      RKD
+ 1.0d-3 1.0d-3 1.0d-3 1.0d-3 1.0d-3 1.0d-3 1.0d-3     TRANC
+ 1.5124d3 0.0d0    0.0d0   0.0     1.0d0   0.0d0   1.0d0              PROPT
+ 0.0d0  0.0d0  0.0d0  0.0d0  0.0d0  0.0d0  0.0d0      RKD
+ 0.0d0  0.0d0  0.0d0  0.0d0  0.0d0  0.0d0  0.0d0      TRANC
+ 1.7061d3 0.0d0    0.0d0   0.0     1.0d0   0.0d0   1.0d0              PROPT
+ 0.0d0  0.0d0  0.0d0  0.0d0  0.0d0  0.0d0  0.0d0      RKD
+ 0.0d0  0.0d0  0.0d0  0.0d0  0.0d0  0.0d0  0.0d0      TRANC
+ 4.0  0.0  4.0  2.5                   GRATE
+ 0.4  0.4  0.4  0.17                  YCOEFF
+1.8D-2  1.8d-2  1.8D-2  1.8D-2        RTARDS   Kso, Ksn
+3.0D-5  3.0d-5  3.0D-5  2.0D-5        RTARDO   Ko, Kn
+3.0d-4  3.0d-4  3.0D-4  3.0D-4        RTARDN   Kpo, Kpn
+1.0  0.375  1.0   0.375               SCOEFF   gammao, gamman
+0.004  0.002  0.004  0.002            ECOEFF   alphao, alphan
+0.02 0.02 0.02 0.02                   DCOEFF   lambdao, lambdan
+3.0D-5  2.0d-5   3.0D-5 2.0D-5        SATURC   GAMMAo, GAMMAn
+0.05 0.021 0.05 0.021                 PCOEFF   Epsilon
+  1.1d-4                              COFK
+===== DATA SET 6: SOIL PROPERTIES
+  1  2    0   1.0d0  9.8D0  1.0D0     KSP,NSPPM,KCP,RHO,GRAV,VISC
+ -1000.0  1000.0                      PRESUURE
+ -1000.0  1000.0
+ -1000.0  1000.0
+ -1000.0  1000.0
+ -1000.0  1000.0
+ -1000.0  1000.0
+ -1000.0  1000.0
+ -1000.0  1000.0
+ 0.465    0.465                       MOISTURE CONTENT
+  0.285   0.285
+  0.365   0.365
+  0.323   0.323
+  0.387   0.387
+  0.412   0.412
+  0.364   0.364
+  0.322   0.322
+  1.0     1.0                         RELATIVE HYDRAULIC CONDUCTIVITY
+  1.0     1.0
+  1.0     1.0
+  1.0     1.0
+  1.0     1.0
+  1.0     1.0
+  1.0     1.0
+  1.0     1.0
+  0.0     0.0                         D(THETA)/DH
+  0.0     0.0
+  0.0     0.0
+  0.0     0.0
+  0.0     0.0
+  0.0     0.0
+  0.0     0.0
+  0.0     0.0
+===== DATA SET 7: NODE COORDINATES
+  510                                 NNP
+  1  16  15  0.0  0.0  0.0  0.0  0.0  0.1
+  2  16  15  0.1  0.0  0.0  0.0  0.0  0.1
+  3  16  15  0.2  0.0  0.0  0.0  0.0  0.1
+  4  16  15  0.3  0.0  0.0  0.0  0.0  0.1
+  5  16  15  0.4  0.0  0.0  0.0  0.0  0.1
+  6  16  15  0.5  0.0  0.0  0.0  0.0  0.1
+  7  16  15  0.6  0.0  0.0  0.0  0.0  0.1
+  8  16  15  0.7  0.0  0.0  0.0  0.0  0.1
+  9  16  15  0.8  0.0  0.0  0.0  0.0  0.1
+ 10  16  15  0.9  0.0  0.0  0.0  0.0  0.1
+ 11  16  15  1.0  0.0  0.0  0.0  0.0  0.1
+ 12  16  15  1.1  0.0  0.0  0.0  0.0  0.1
+ 13  16  15  1.2  0.0  0.0  0.0  0.0  0.1
+ 14  16  15  1.3  0.0  0.0  0.0  0.0  0.1
+ 15  16  15  1.4  0.0  0.0  0.0  0.0  0.1
+ 256 16  15  0.0  1.0  0.0  0.0  0.0  0.1
+ 257 16  15  0.1  1.0  0.0  0.0  0.0  0.1
+ 258 16  15  0.2  1.0  0.0  0.0  0.0  0.1
+ 259 16  15  0.3  1.0  0.0  0.0  0.0  0.1
+ 260 16  15  0.4  1.0  0.0  0.0  0.0  0.1
+ 261 16  15  0.5  1.0  0.0  0.0  0.0  0.1
+ 262 16  15  0.6  1.0  0.0  0.0  0.0  0.1
+ 263 16  15  0.7  1.0  0.0  0.0  0.0  0.1
+ 264 16  15  0.8  1.0  0.0  0.0  0.0  0.1
+ 265 16  15  0.9  1.0  0.0  0.0  0.0  0.1
+ 266 16  15  1.0  1.0  0.0  0.0  0.0  0.1
+ 267 16  15  1.1  1.0  0.0  0.0  0.0  0.1
+ 268 16  15  1.2  1.0  0.0  0.0  0.0  0.1
+ 269 16  15  1.3  1.0  0.0  0.0  0.0  0.1
+ 270 16  15  1.4  1.0  0.0  0.0  0.0  0.1
+  0   0  0   0.0  0.0  0.0  0.0  0.0  0.0
+===== DATA SET 9 : ELEMENT INCIDENCES
+  224                                       NEL
+   1   15  14  1  2  257  256  16  17  272  271  15
+   2   15  14  2  3  258  257  17  18  273  272  15
+   3   15  14  3  4  259  258  18  19  274  273  15
+   4   15  14  4  5  260  259  19  20  275  274  15
+   5   15  14  5  6  261  260  20  21  276  275  15
+   6   15  14  6  7  262  261  21  22  277  276  15
+   7   15  14  7  8  263  262  22  23  278  277  15
+   8   15  14  8  9  264  263  23  24  279  278  15
+   9   15  14  9  10  265  264  24  25  280  279  15
+  10   15  14  10 11  266  265  25  26  281  280  15
+  11   15  14  11 12  267  266  26  27  282  281  15
+  12   15  14  12 13  268  267  27  28  283  282  15
+  13   15  14  13 14  269  268  28  29  284  283  15
+  14   15  14  14 15  270  269  29  30  285  284  15
+    0    0    0    0    0    0    0    0    0    0    0   0      END OF IE
+===== DATA SET 10: MATERIAL CORRECTION
+134                       NCM
+1  3  14 3  0
+2  3  14 3  0
+3  3  14 3  0
+6  8  1  2  0
+20 8  1  2  0
+34 8  1  2  0
+48 8  1  2  0
+68 5  14 2 0
+69 5  14 2 0
+70 5  14 2 0
+180  3  14 3  0
+181  3  14 3  0
+182  3  14 3  0
+152 2 1  4  0
+166 2 1  4  0
+4   3 14 4  0
+5   3 14 4  0
+57  2 1  6  0
+71  2 1  6  0
+60  1 1  5  0
+74  1 1  5  0
+62  3 1  7  0
+76  3 1  7  0
+66  1 1  8  0
+80  1 1  8  0
+94  3 14 7  0
+95  3 14 7  0
+153 1 1  5  0
+167 1 1  5  0
+181 3 14 6  0
+182 3 14 6  0
+0  0  0  0  0
+===== DATA SET 11 : INITIAL CONDIDTIONS
+ 0  IHTR
+ 1  509  1  0.0d0  0.0d0  0.0d0           I.C. FOR FLOW 
+ 0   0   0  0.0D0  0.0D0  0.0D0
+ 1  509  1  1.77D-4  0.0D0  0.0D0         I.C. FOR MICROBE 1
+ 0   0   0  0.0D0  0.0D0  0.0D0
+ 1  509  1  0.0D0  0.0D0  0.0D0           I.C. FOR MICROBE 2
+ 0   0   0  0.0D0  0.0D0  0.0D0
+ 1  509  1  1.77D-4  0.0D0  0.0D0         I.C. FOR MICROBE 3
+ 0   0   0  0.0D0  0.0D0  0.0D0
+ 1  509  1  5.0D-3   0.0D0  0.0D0         I.C. FOR SUBSTRATE
+ 0   0   0  0.0D0  0.0D0  0.0D0
+ 1  509  1  5.0D-3   0.0D0  0.0D0         I.C. FOR OXYGEN
+ 0   0   0  0.0D0  0.0D0  0.0D0
+ 1  509  1  5.0D-3   0.0D0  0.0D0         I.C. FOR NITRATE
+ 0   0   0  0.0D0  0.0D0  0.0D0
+ 1  509  1  3.0D-3   0.0D0  0.0D0         I.C. FOR NUTRIENT
+ 0   0   0  0.0D0  0.0D0  0.0D0
+===== DATA SET 12: ELEMENT(DISTRIBUTED) SOURCE/SINK OF FLOW
+    0  0  0  0                            NSELF,NSPRF,NSDPF,KSAIF
+===== DATA SET 13: POINT(WELL) SOURCE/SINK OF FLOW
+    4  2  3  0                            NWNPF,NWPRF,NWDPF,KWAIF
+    0.0d0  0.0 1.0d-6  3.75d-3  1.0d38  3.75d-3
+    0.0d0  0.0 1.0d-6  -2.0d-3   1.0d38 -2.0d-3
+    17  239  272  494
+    1  1  2  1  0
+    2  1  2  2  0
+    0  0  0  0  0
+===== DATA SET 14: ELEMENT(DISTRIBUTED) SOURCE/SINK OF TRANSPORT
+    0  0  0  0                            NSELT,NSPRT,NSDPT,KSAIT
+===== DATA SET 15: POINT(WELL) SOURCE/SINK OF TRANSPORT
+    4  2  3  0                            NWNPF,NWPRF,NWDPF,KWAIF
+    0.0d0  0.0 0.0d0  1.0d-6  3.75d-3  0.0d0  1.0d38  3.75d-3  0.0d0
+    0.0d0  0.0 0.0d0  1.0d-6  -2.0d-3  0.0d0  1.0d38 -2.0d-3   0.0d0
+    17  239  272  494
+    1  1  2  1  0 
+    2  1  2  2  0
+    0  0  0  0  0
+    1  1  2  1  0 
+    2  1  2  2  0
+    0  0  0  0  0
+    1  1  2  1  0 
+    2  1  2  2  0
+    0  0  0  0  0
+    1  1  2  1  0 
+    2  1  2  2  0
+    0  0  0  0  0
+    1  1  2  1  0 
+    2  1  2  2  0
+    0  0  0  0  0
+    1  1  2  1  0 
+    2  1  2  2  0
+    0  0  0  0  0
+    1  1  2  1  0 
+    2  1  2  2  0
+    0  0  0  0  0
+===== DATA SET 16: RAINFALL/EVAPORATION-SEEPAGE BOUNDARY CONDITIONS OF FLOW
+    0  0  0  0  0                  NVESF,NVNPF,NRPRF,NRDPF,KRAIF
+===== DATA SET 17:  DIRICHLET BOUNDARY CONDITIONS OF FLOW
+  68   2  2  0                     NDNPF,NDPRF,NDDPF,KDAIF
+  0.0d0   1.0   1.0d38   1.0 
+  0.0d0   0.0   1.0d38   0.0
+  1   16   1  1   15
+ 18   16   1  256 15
+ 35   16   1  15  15
+ 52   16   1  270 15
+  0   0  0   0    0
+  1   33    1   1  0
+ 35   33    1   2  0
+  0    0    0   0  0
+===== DATA SET 18: CAUCHY BOUNDARY CONDITIONS OF FLOW
+    0    0  0  0  0                NCESF,NCNPF,NCPRF,NCDPF,KCAIF
+===== DATA SET 19: NEUMANN BOUNDARY CONDITIONS, FLOW
+    0  0  0  0  0                  NNESF,NNNPF,NNPRF,NNDPF,KNAIF
+===== DATA SET 20: VARIABLE BOUNDARY CONDITIONS OF TRANSPORT
+   16 34 1 2 0                     NVESF,NVNPF,NVPRF,NVDPF,KVAIF
+   0.0d0  0.0d0  1.0d38  0.0d0
+    1  15   1   1   0
+    0   0   0   0   0   end of irtyp
+    1  15   1   1   0
+    0   0   0   0   0   end of irtyp
+    1  15   1   1   0
+    0   0   0   0   0   end of irtyp
+    1  15   1   1   0
+    0   0   0   0   0   end of irtyp
+    1  15   1   1   0
+    0   0   0   0   0   end of irtyp
+    1  15   1   1   0
+    0   0   0   0   0   end of irtyp
+    1  15   1   1   0
+    0   0   0   0   0   end of irtyp
+    1   15  1  15  270 285 30  15 15 15 15
+    0   0   0   0   0   0   0  0  0  0  0   end fof isvt(j,i),j=1,4
+    1   16  1  15  15
+   18   16  1  270 15
+     0    0  0  0  0                  NVEST,NVNPT,NVPRT,NVDPT,NVAIT
+===== DATA SET 21:  DIRICHLET BOUNDARY CONDITIONS OF TRANSPORT
+  34   5  2  0                        NDNPT,NDPRT,NDDPT,KDAIT
+  0.0  1.77d-4  1.0d38  1.77d-4
+  0.0  0.0      1.0d38  0.0
+  0.0  1.5d-2   1.0d38  1.5d-2
+  0.0  5.0d-3   1.0d38  5.0d-3
+  0.0  3.0d-3   1.0d38  3.0d-3
+  1   16   1  1   15
+ 18   16   1  256 15
+  0   0  0   0    0
+  1   33   1  1   0
+  0   0    0  0   0
+  1   33   1  2   0
+  0   0    0  0   0
+  1   33   1  1   0
+  0   0    0  0   0
+  1   33   1  3   0
+  0   0    0  0   0
+  1   33   1  4   0
+  0   0    0  0   0
+  1   33   1  4   0
+  0   0    0  0   0
+  1   33   1  5   0
+  0   0    0  0   0
+===== DATA SET 22: CAUCHY BOUNDARY CONDITIONS OF TRANSPORT
+    0    0   0  0  0                 NCEST,NCNPT,NCPRT,NCDPT,KCAIT
+===== DATA SET 23: NEUMANN BOUNDARY CONDITIONS, TRANSPORT
+    0  0  0  0  0                    NNEST,NNNPT,NNPRT,NNDPT,KNAIT
+===== DATA SET 24 : PARAMETERS CONTROLLOING TRACKING SCHEME
+ 1 1 0 2 1 2 2 1 2 2 1 2 1 IZOOM,IDZOOM,IEPC,NXA,NYA,NZA,NXW,NYW,NZW,NXD,NYD,NZD
+  1.0d-4     1.0d-4        ADPEPS,ADPARM
+    0           ====== END OF JOB ====== 

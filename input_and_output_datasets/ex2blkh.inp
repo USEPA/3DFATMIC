@@ -1,0 +1,134 @@
+    2 Two-dimensional Drainage Flow Problem; L=M, T=DAY, M=KG
+===== DATA SET 2: OPTION PARAMETERS
+  10  0  1  0
+ 1  0.5D0 1.0D-4     NITRFT OMEFTF OMEFTT
+ 0  0 0  0  0 0 0 0 0 1 KSSF KSST ILUMP IMID IPNTSF IPNTST miconf nstrf nstrt
+ 1  1.0  0.5d0  0.5d0  0.0d0  KGRAV WF OMEF OMIF CNSTKR
+ 1 0  1  1  1                 KVIT IWET IOPTIM ksorp lgran
+ 1.0d0 0.5d0 1.0d0 1.0d0      WT WVT OMET OMIT
+===== DATA SET 3: ITERATION PARAMETERS
+ 50 20 100 2.0d-3 2.0d-3      NITERF NCYLF NPITRF TOLAF TOLBF
+  1 100 1.0d-3  1.0d-4        NITERT NPITRT TOLAT TOLBT
+===== DATA SET 4: TIME CONTROL PARAMETERS
+ 0    0                       NTI NDTCHG
+ 0.05d0  0.20d0 0.05d0  22.0d0   DELT CHNG DELMAX TMAX
+55                               KPR0 KPR(1..NTI)
+00                               KDSK0 KDSK(1..NTI)
+===== DATA SET 5: MATERIAL PROPERTIES
+1  7  0  1                       NMAT NMPPM
+0.01D0  0.0D0  0.01D0   0.0D0  0.0D0  0.0D0 1.0d0                    
+0.0                                                                       
+ 1.0d0                           
+===== DATA SET 6: SOIL PROPERTIES
+0    5    0    1.0d0  7.316D10  1.1232d4        KSP NSPPM KCP GRAV
+   0.050D0   0.250D0    0.00D0    10.0D0    4.0D0    THPROP
+   4.000D0   0.000D0    0.00D0     0.0D0    0.0D0    AKPROP
+===== DATA SET 7: NODE COORDINATES
+  242   NNP
+    1 10 11    0.0D0   0.0D0   0.0D0   1.0D0   0.0D0   0.0D0
+    2 10 11    0.0D0   0.0D0   1.0D0   1.0D0   0.0D0   0.0D0
+    3 10 11    0.0D0   0.0D0   2.0D0   1.0D0   0.0D0   0.0D0
+    4 10 11    0.0D0   0.0D0   3.0D0   1.0D0   0.0D0   0.0D0
+    5 10 11    0.0D0   0.0D0   4.0D0   1.0D0   0.0D0   0.0D0
+    6 10 11    0.0D0   0.0D0   5.0D0   1.0D0   0.0D0   0.0D0
+    7 10 11    0.0D0   0.0D0   6.0D0   1.0D0   0.0D0   0.0D0
+    8 10 11    0.0D0   0.0D0   7.0D0   1.0D0   0.0D0   0.0D0
+    9 10 11    0.0D0   0.0D0   8.0D0   1.0D0   0.0D0   0.0D0
+   10 10 11    0.0D0   0.0D0   9.0D0   1.0D0   0.0D0   0.0D0
+   11 10 11    0.0D0   0.0D0  10.0D0   1.0D0   0.0D0   0.0D0
+  122 10 11    0.0D0  10.0D0   0.0D0   1.0D0   0.0D0   0.0D0
+  123 10 11    0.0D0  10.0D0   1.0D0   1.0D0   0.0D0   0.0D0
+  124 10 11    0.0D0  10.0D0   2.0D0   1.0D0   0.0D0   0.0D0
+  125 10 11    0.0D0  10.0D0   3.0D0   1.0D0   0.0D0   0.0D0
+  126 10 11    0.0D0  10.0D0   4.0D0   1.0D0   0.0D0   0.0D0
+  127 10 11    0.0D0  10.0D0   5.0D0   1.0D0   0.0D0   0.0D0
+  128 10 11    0.0D0  10.0D0   6.0D0   1.0D0   0.0D0   0.0D0
+  129 10 11    0.0D0  10.0D0   7.0D0   1.0D0   0.0D0   0.0D0
+  130 10 11    0.0D0  10.0D0   8.0D0   1.0D0   0.0D0   0.0D0
+  131 10 11    0.0D0  10.0D0   9.0D0   1.0D0   0.0D0   0.0D0
+  132 10 11    0.0D0  10.0D0  10.0D0   1.0D0   0.0D0   0.0D0
+    0  0  0  0.0   0.0   0.0   0.0   0.0  0.0    END OF COORDINATES
+===== DATA SET 8: SUBREGIONAL DATA
+    2
+    1    1    1  121    0
+    0    0    0    0    0         END OF NNPLR(K)
+    1  120    1    1    1
+    0    0    0    0    0         END OF GNLR(I,1)
+    1  120    1  122    1
+    0    0    0    0    0         END OF GNLR(I,2)
+===== DATA SET 9 : ELEMENT INCIDENCES
+  100        NEL
+    1    9    1    1   12  133  122    2   13  134  123    1
+   11    9    1   12   23  144  133   13   24  145  134    1
+   21    9    1   23   34  155  144   24   35  156  145    1
+   31    9    1   34   45  166  155   35   46  167  156    1
+   41    9    1   45   56  177  166   46   57  178  167    1
+   51    9    1   56   67  188  177   57   68  189  178    1
+   61    9    1   67   78  199  188   68   79  200  189    1
+   71    9    1   78   89  210  199   79   90  211  200    1
+   81    9    1   89  100  221  210   90  101  222  211    1
+   91    9    1  100  111  232  221  101  112  233  222    1
+    0    0    0    0    0    0    0    0    0    0    0    0 END OF IE
+===== DATA SET 10: MATERIAL CORRECTION
+    0    NCM
+===== DATA SET 11: INITIAL CONDITIONS
+    0
+    1   10   11         10.0D0     0.0D0     0.0D0
+    2   10   11          9.0D0     0.0D0     0.0D0
+    3   10   11          8.0D0     0.0D0     0.0D0
+    4   10   11          7.0D0     0.0D0     0.0D0
+    5   10   11          6.0D0     0.0D0     0.0D0
+    6   10   11          5.0D0     0.0D0     0.0D0
+    7   10   11          4.0D0     0.0D0     0.0D0
+    8   10   11          3.0D0     0.0D0     0.0D0
+    9   10   11          2.0D0     0.0D0     0.0D0
+   10   10   11          1.0D0     0.0D0     0.0D0
+   11   10   11          0.0D0     0.0D0     0.0D0
+  122   10   11         10.0D0     0.0D0     0.0D0
+  123   10   11          9.0D0     0.0D0     0.0D0
+  124   10   11          8.0D0     0.0D0     0.0D0
+  125   10   11          7.0D0     0.0D0     0.0D0
+  126   10   11          6.0D0     0.0D0     0.0D0
+  127   10   11          5.0D0     0.0D0     0.0D0
+  128   10   11          4.0D0     0.0D0     0.0D0
+  129   10   11          3.0D0     0.0D0     0.0D0
+  130   10   11          2.0D0     0.0D0     0.0D0
+  131   10   11          1.0D0     0.0D0     0.0D0
+  132   10   11          0.0D0     0.0D0     0.0D0
+    0    0    0          0.0D0     0.0D0     0.0D0  END OF IC FOR FLOW
+===== DATA SET 12: ELEMENT(DISTRIBUTED) SOURCE/SINK OF FLOW
+    0  0  0  0           NSELF NSPRF NSDPF KSAIF
+===== DATA SET 13: POINT(WELL) SOURCE/SINK OF FLOW
+    0  0  0  0           NWNPF NWPRF NWDPF KWAIF
+===== DATA SET 16: RAINFALL/EVAPORATION-SEEPAGE BOUNDARY CONDITIONS OF FLOW
+   18 38  2  2  0        NVESF NVNPF NRPRF NRDPF KRAIF
+     0.0D0    6.0D-3    1.0D38    6.0D-3     TQVBFF QVBFF
+     0.0D0    0.0D00    1.0D38    0.0D00     TQVBFF QVBFF
+    1    9    1    1    0
+   11    7    1    2    0
+    0    0    0    0    0                END OF IVTYPF
+    1    9    1   11   22  143  132   11   11   11   11
+   11    7    1  120  241  242  121   -1   -1   -1   -1
+    0  0  0  0  0  0  0  0  0  0  0 END OF ISVF(J,I) J=1,4
+    1   10    1   11   11
+   12    7    1  120   -1
+   20   10    1  132   11
+   31    7    1  241   -1
+    0    0    0    0    0        END OF NPVBF
+    1   37    1          0.0D0     0.0D0     0.0D0
+    0    0    0     0.0       0.0         0.0    END OF HCON
+    1   37    1        -90.0D2     0.0D0     0.0D0
+    0    0    0     0.0       0.0         0.0    END OF HMIN
+===== DATA SET 17:  DIRICHLET BOUNDARY CONDITIONS OF FLOW
+    6  1  2  0                      NDNPF NDPRF NDDPF KDAIF
+     0.0D0     2.0D0    1.0D38     2.0D0    THDBFF HDBFF
+    1   2   1   111   1
+    4   2   1   232   1
+    0   0   0    0     0
+    1    5    1    1    0
+    0    0    0    0    0                 END OF IDTYPF
+===== DATA SET 18: CAUCHY BOUNDARY CONDITIONS OF FLOW
+    0  0  0  0  0                   NCESF NCNPF NCPRF NCDPF KCAIF
+===== DATA SET 19: NEUMANN BOUNDARY CONDITIONS, FLOW
+    0  0  0  0  0                   NNESF NNNPF NNPRF NNDPF KNAIF
+    0           ====== END OF JOB ======
